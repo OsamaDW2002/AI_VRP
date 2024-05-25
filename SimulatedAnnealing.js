@@ -1,12 +1,35 @@
-import {Vehicles} from "./Vehicle.js";
 import {drawPath} from "./script.js";
 class SimulatedAnnealing{
-    constructor(){
 
+    set minT(value) {
+        this._minT = value;
+    }
+    constructor(){
         this._initialDistance = 0;
         this._currentDistance = 0;
         this._bestDistance = 0;
         this._nextDistance = 0;
+        this._T = 1000;
+        this._coolingRate = 0.999;
+        this._minT = 0;
+    }
+    get coolingRate() {
+        return this._coolingRate;
+    }
+
+    set coolingRate(value) {
+        this._coolingRate = value;
+    }
+
+    get minT() {
+        return this._minT;
+    }
+    get T() {
+        return this._T;
+    }
+
+    set T(value) {
+        this._T = value;
     }
     get initialDistance() {
         return this._initialDistance;
@@ -77,6 +100,14 @@ class SimulatedAnnealing{
         this.currentDistance = this.initialDistance;
         return this.initialDistance;
     }
+    coolingSystem(){
+        this.T *= this.coolingRate;
+    }
+    checkIfDone(){
+        return this.minT >= this.T;
+    }
+
+
 
 }
 
