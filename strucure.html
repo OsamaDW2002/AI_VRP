@@ -21,9 +21,8 @@
   </header>
   <section>
       <div id="click-area" style="width: 900px; height: 500px; background-color: #ddd;">
-          <canvas id="canvas" width="900" height="500" style="background-image:url('west.jpg') ; background-repeat: no-repeat;  background-size: 100% 100%;  " >
-
-          </canvas>
+          <canvas id="canvasNodes" width="900" height="500" style="z-index: 4;  background-image:url('west.jpg') ; background-repeat: no-repeat;  background-size: 100% 100%;  " ></canvas>
+          <canvas id="canvasPath" width="900" height="500" style="z-index: 2; background-color: transparent ; background-repeat: no-repeat;  background-size: 100% 100%;  " ></canvas>
       </div>
       <div style="width: calc(100% - 900px); background-color: #6C584C">
           <div style="height: 30%; overflow: auto; display: flex; flex-direction: column; justify-content: flex-start">

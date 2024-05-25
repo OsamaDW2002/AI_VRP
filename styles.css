@@ -26,6 +26,14 @@ section div:nth-child(2){
     /*flex-direction: column;*/
     /*flex-wrap: wrap;*/
 }
+#click-area{
+    position: relative;
+}
+
+#click-area canvas{
+    position: absolute;
+}
+
 
 section div:nth-child(2) div{
     background-color: transparent;
