@@ -9,7 +9,7 @@ class Locations{
         this._demand = demand;
     }
     get id() {
-        return this._id;
+        return Number(this._id);
     }
 
     set id(value) {
@@ -33,7 +33,7 @@ class Locations{
     }
 
     get before() {
-        return this._before;
+        return Number(this._before);
     }
 
     set before(value) {
@@ -41,7 +41,7 @@ class Locations{
     }
 
     get after() {
-        return this._after;
+        return Number(this._after);
     }
 
     set after(value) {

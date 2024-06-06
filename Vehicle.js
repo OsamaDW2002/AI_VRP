@@ -22,13 +22,14 @@ class Vehicles{
         }
      }
     printc() {
-        for (let i = 0; i < 10; i++) {
-            for (const vehicleKey of this.vehicles[i]) {
-                console.log( "array num "+i+"----"+vehicleKey.id +"-----"+vehicleKey.x +"-----"+vehicleKey.y + "-------" + vehicleKey.before + "-----" + Number(vehicleKey.after) + "------" + vehicleKey.demand);
-                // console.log(vehicleKey.id)
-            }
-            console.log("\n");
-        }
+        // for (let i = 0; i < 10; i++) {
+        //     for (const vehicleKey of this.vehicles[i]) {
+        //         console.log( "array num "+i+"----"+vehicleKey.id +"-----"+vehicleKey.x +"-----"+vehicleKey.y + "-------" + vehicleKey.before + "-----" + Number(vehicleKey.after) + "------" + vehicleKey.demand);
+        //         // console.log(vehicleKey.id)
+        //     }
+        //     console.log("\n");
+        // }
+        // console.log(this.vehicles)
         return true;
     }
 
